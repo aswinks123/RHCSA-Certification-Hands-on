@@ -18,7 +18,7 @@
 7. Force the user to change password at first login
 
 
-### ANSWERS
+### Answers
 
 1. Create a user named alex with the required settings
 
