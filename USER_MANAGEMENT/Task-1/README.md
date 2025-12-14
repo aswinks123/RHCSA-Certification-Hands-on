@@ -38,7 +38,7 @@ passwd alex
 <Enter the password as: RedHat@1500 >
 
 ```
-
+`
 
 3. Force user to change password at first login:
 
@@ -49,7 +49,7 @@ chage -d 0 alex
 
 ## Learning:
 
-To maually set the userID : -u 
+To manually set the userID : -u 
 
 To create home directory for user: -m
 
@@ -58,7 +58,7 @@ To specify the home directory location: -d path of home
 To specify the shell: -s path to shell
 
 
-To force immidiate password change:
+To force immediate password change:
 
 ```
 chage -d 0 <user name> : This will force user to change password on next login
