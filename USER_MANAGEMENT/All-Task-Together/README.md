@@ -1,4 +1,4 @@
-# This is the maximum use case questions RHCSA can ask.
+# These are the maximum questions RHCSA can ask from user management
 
 
 ### 1. User Creation
