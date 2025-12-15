@@ -44,6 +44,7 @@ passwd alex
 
 ```
 chage -d 0 alex
+
 ```
 
 
