@@ -39,10 +39,15 @@ useradd -u 1700 -g ci -G docker,developers -m -d /srv/ciuser -s /bin/bash ciuser
 Note: This satisfy the following
 
 userid: 1700
+
 primary group: -g ci
+
 secondary group: -G docker,developers
+
 create home directory: -m flag
+
 set the home dir location: -d /srv/ciuser
+
 set the shell: -s /bin/bash
 
 
