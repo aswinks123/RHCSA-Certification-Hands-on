@@ -1,0 +1,63 @@
+# TASK: Your company needs a special user for a CI/CD system.
+
+### Requirements:
+
+Create a user named ciuser
+
+1. UID must be 1700 -ok
+
+2. Primary group: ci (create if it doesn’t exist)-ok
+
+3. Secondary groups: docker, developers (create if they don’t exist)
+
+4. Home directory: /srv/ciuser -ok
+
+5. Login shell: /bin/bash -ok 
+
+6. Password: C1user@2025 -ok 
+
+7. Force password to expire in 10 days
+
+8. Prevent the user from changing the password before 3 days -ok
+
+9. Lock the account immediately after creation -ok
+
+
+# Answer
+
+1. Add the groups
+
+```
+groupadd ci
+groupadd docker
+groupadd developers
+```
+2. Add the user
+```
+useradd -u 1700 -g ci -G docker,developers -m -d /srv/ciuser -s /bin/bash ciuser
+```
+
+3. Set the password
+
+```
+passwd ciuser
+```
+
+4. Force password to expire in 10 days
+
+```
+chage -M 10 ciuser
+
+```
+
+5. Prevent the user from changing the password before 3 days
+
+```
+chage -m 3 ciuser
+```
+
+6. Lock the account immediately after creation
+
+```
+passwd -l ciuser
+```
