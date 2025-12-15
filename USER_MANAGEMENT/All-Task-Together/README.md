@@ -70,21 +70,6 @@ useradd -u 1950 -g developers -G docker,ci -m -d /opt/devtest -k /etc/skel_dev -
 
 
 ```
-
-Following are satisfied:
-
-Create a user devtest
-
-UID: 1950
-
-Primary group: developers
-
-Secondary groups: docker, ci
-
-Home directory: /opt/devtest
-
-Skeleton directory: /etc/skel_dev
-
-Login shell: /bin/bash
+ User creation session completed successflly
 
 
