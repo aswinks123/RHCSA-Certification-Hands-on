@@ -3,6 +3,7 @@
 
 ### 1. User Creation
 
+```
 Create a user devtest
 
 UID: 1950
@@ -16,9 +17,10 @@ Home directory: /opt/devtest
 Skeleton directory: /etc/skel_dev
 
 Login shell: /bin/bash
+```
 
 ### 2. Password Management
-
+```
 Set password: RHCSA@2025
 
 Force password change at first login
@@ -28,22 +30,22 @@ Password expires every 10 days
 Prevent password change before 3 days
 
 Warn 2 days before password expires
-
+```
 ### 3. Account Expiry
-
+```
 Account expires after 14 days
 
 Set inactive days after password expiry (e.g., 2 days)
-
+```
 ### 4. Account Lock/Unlock
-
+```
 Lock account immediately after creation
 
 Unlock account when needed (usermod -U)
-
+```
 
 ### 5. Optional Extras 
-
+```
 Modify user secondary groups after creation: usermod -aG <group>
 
 Change login shell after creation: chsh -s /bin/zsh devtest
@@ -51,11 +53,11 @@ Change login shell after creation: chsh -s /bin/zsh devtest
 Delete the user and optionally remove home directory: userdel -r devtest
 
 Set a user without a home directory for system accounts
-
+```
 
 # Lets complete this task
 
-### 1. User Creation - Answer
+### 1. User Creation 
 
 ```
 groupadd developers
